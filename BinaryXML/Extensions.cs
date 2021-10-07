@@ -58,7 +58,7 @@ namespace BinaryXML
                 try
                 {
                     if (failed) Console.WriteLine();
-                    return info.OpenWrite();
+                    return info.Open(FileMode.Create, FileAccess.Write);
                 }
                 catch (IOException)
                 {
