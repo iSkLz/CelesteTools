@@ -390,7 +390,7 @@ namespace BinaryXML
                     Console.WriteLine(_STREAMS);
 
                     var map = Load(inputStream, inputFormat);
-                    Console.WriteLine(_LOADED);
+                    Console.WriteLine(_LOADED, input.FullName);
 
                     Serialize(map, outputStream, outputFormat);
                     Console.WriteLine(_DONE);
