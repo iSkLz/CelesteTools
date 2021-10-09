@@ -25,7 +25,7 @@ namespace BinaryXML
                 {
                     Attributes.Add(new Attribute(Attribute._INNERTEXT,
                         (AttributeType)int.Parse(text.Value[0].ToString()),
-                        text.Value.Substring(1)
+                        text.Value.Substring(2)
                     ));
                 }
             }
